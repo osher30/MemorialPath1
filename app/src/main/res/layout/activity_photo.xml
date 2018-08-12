@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <nz.co.iswe.android.mediagallery.MediaGalleryView
+        android:id="@+id/scroll_gallery_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:background="#e1ddd2" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:background="#e1ddd2"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile"
+
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/profile"/>
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/music"/>
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/video"/>
+
+        <ImageView
+            android:id="@+id/memorialevent"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/memorialevent"/>
+
+    </LinearLayout>
+</RelativeLayout>

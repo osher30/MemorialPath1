@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "4416846896",
+    "firebase_url": "https://shlomisasportas-344fc.firebaseio.com",
+    "project_id": "shlomisasportas-344fc",
+    "storage_bucket": "shlomisasportas-344fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4416846896:android:594c8abe1c628584",
+        "android_client_info": {
+          "package_name": "com.shlomisasportas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4416846896-ufjen83njsenobloakfh4mc7se85g4pm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shlomisasportas",
+            "certificate_hash": "cd0bb37b5f87a16210f9c5caf6468f5727f32250"
+          }
+        },
+        {
+          "client_id": "4416846896-n9eeshl0kfccl376vl3nn9af874koi3j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_m5Q9uyFfB5R6kwgmbYr_1dKcgdW0qzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4416846896-n9eeshl0kfccl376vl3nn9af874koi3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

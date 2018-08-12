@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.shlomisasportas.SearchActivity">
+
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="שם פרטי"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/firstName"
+        android:layout_alignStart="@+id/firstName"
+        android:layout_below="@+id/firstName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="שם משפחה"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/deathDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lastName"
+        android:layout_alignRight="@+id/lastName"
+        android:layout_below="@+id/lastName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:hint="תאריך פטירה" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/expand"
+        android:layout_alignRight="@+id/deathDate"
+        android:layout_below="@+id/expand"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="false"
+        android:hint="תאריך לידה" />
+
+    <Button
+        android:id="@+id/search"
+        android:background="#83944e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="חפש" />
+
+    <EditText
+        android:id="@+id/age"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dob"
+        android:layout_alignStart="@+id/dob"
+        android:layout_below="@+id/dob"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:hint="גיל"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/deathLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/age"
+        android:layout_alignRight="@+id/age"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        android:hint="מקום קבורה" />
+
+    <EditText
+        android:id="@+id/momName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/deathLocation"
+        android:layout_alignRight="@+id/deathLocation"
+        android:layout_below="@+id/deathLocation"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        android:hint="שם האם" />
+
+    <EditText
+        android:id="@+id/dadName"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/momName"
+        android:layout_alignStart="@+id/momName"
+        android:layout_below="@+id/momName"
+        android:ems="10"
+        android:visibility="gone"
+        android:inputType="textPersonName"
+        android:hint="שם האב" />
+
+    <ImageView
+        android:id="@+id/expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/deathDate"
+        android:layout_alignRight="@+id/deathDate"
+        android:layout_below="@+id/deathDate"
+        />
+</RelativeLayout>

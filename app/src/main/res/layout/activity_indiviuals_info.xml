@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.shlomisasportas.IndiviualsInfoActivity">
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="155dp"
+        android:layout_below="@+id/profilepic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:scrollbars="vertical"
+
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:weightSum="1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/profile"/>
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/music"/>
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/video"/>
+
+        <ImageView
+            android:id="@+id/memorialevent"
+            android:layout_weight="0.25"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:src="@drawable/memorialevent"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/profilepic"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/maps" />
+</RelativeLayout>
